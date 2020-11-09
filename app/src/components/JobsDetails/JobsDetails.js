@@ -1,41 +1,42 @@
 import React, { Component } from 'react';
 import './JobsDetails.css';
 import AUX from '../../hoc/Auxillary';
+import { Link } from 'react-router-dom';
 
 class JobsDetails extends Component {
     constructor() {
         super();
         this.state = {
-            jobs: []
+            loadedJob: null
         }
     }
 
     componentDidMount() {
-        fetch('https://5fa97699c9b4e90016e6a81f.mockapi.io/jobs')
-            .then(results => {
-                return results.json();
-            }).then(data => {
-                console.log(data);
-                let jobs = data.map((job) =>{
-                    return(
-                        <div key={job.id}>
-                            <p className="job">{job.title}</p>
-                        </div>
-                    )
-                })
-                this.setState({jobs: jobs});
-                console.log("state", this.state.jobs);
-            })
-    }
+        if ( this.props.match.params.id ) {
+            if ( !this.state.loadedJob || (this.state.loadedJob && this.state.loadedJob.id !== +this.props.match.params.id) ) {
+                fetch('https://5fa97699c9b4e90016e6a81f.mockapi.io/jobs/' + this.props.match.params.id)
+                    .then( response => {
+                        return response.json()})
+                        .then(data =>{
+                            console.log(data)
+                            this.setState( { loadedJob: data } )}
+                        )};
+            }
+        }
 
     render (){
-        return (
-            <AUX>
-                <main className="jobs-box">
-                    {this.state.jobs}
-                </main>
-            </AUX>
-        )
+        let job = <p></p>;
+        if ( this.state.loadedJob ) {
+            job = (
+                <div>
+                    <Link to="/">home</Link>
+                    <h1>{this.state.loadedJob.title}</h1>
+                    <p>{this.state.loadedJob.description}</p>
+                    <p>{this.state.loadedJob.employment_type}</p>
+                </div>
+            );
+        }
+        return job
     }
 }
 

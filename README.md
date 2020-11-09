@@ -1,6 +1,6 @@
 # React app which shows jobs offerts.
 
-## Recommanded NPM version
+## Recommended NPM version
 
 To run the package it is best to have NVM installed and node set to v12.18.0.
 

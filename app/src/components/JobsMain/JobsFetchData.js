@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './JobsDetails.css';
+import './JobsFetchData.css';
 import AUX from '../../hoc/Auxillary';
 
-class JobsDetails extends Component {
+class JobsFetchData extends Component {
     constructor() {
         super();
         this.state = {
@@ -18,8 +18,9 @@ class JobsDetails extends Component {
                 console.log(data);
                 let jobs = data.map((job) =>{
                     return(
-                        <div key={job.id}>
-                            <p className="job">{job.title}</p>
+                        <div key={job.id} className="job-box">
+                            <p className="job-box__title">{job.title}</p>
+                            <button className="job-box__button job-box__button--align-bottom">Apply</button>
                         </div>
                     )
                 })
@@ -31,12 +32,13 @@ class JobsDetails extends Component {
     render (){
         return (
             <AUX>
-                <main className="jobs-box">
+                <h1>Job Offers</h1>
+                <div className="jobs-box">
                     {this.state.jobs}
-                </main>
+                </div>
             </AUX>
         )
     }
 }
 
-export default JobsDetails;
+export default JobsFetchData;

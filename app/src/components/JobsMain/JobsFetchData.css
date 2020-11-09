@@ -1,0 +1,40 @@
+.jobs-box{
+    width: 65%;
+    margin: auto;
+}
+.job-box{
+    position: relative;
+    width:300px;
+    height: 200px;
+    float: left;
+    border: 1px rgba(0, 0, 0, 0.096) solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin:30px;
+}
+
+    .job-box__title{
+        font-size: 36px;    
+    }
+
+    .job-box__button{
+        background-color: rgb(30, 79, 238);
+        width: 150px;
+        padding: 10px;
+        border-radius: 30px;
+        color:white;
+        border: none;
+    }
+
+    .job-box__button--align-bottom{
+        position: absolute;
+        left:20px;
+        bottom:30px;
+    }
+
+h1{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 36px;    
+    font-weight: 800;
+}

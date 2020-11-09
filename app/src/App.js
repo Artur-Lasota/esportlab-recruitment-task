@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import JobsMain from './components/JobsMain/JobsMain'
+import JobsFetchData from './components/JobsMain/JobsFetchData'
 
 function App() {
   return (
-    <div>
-        <JobsMain />
-    </div>
+    <main>
+        <JobsFetchData />
+    </main>
   );
 }
 

@@ -1,0 +1,23 @@
+.JobsDetails{
+    width: 70%;
+    margin: auto;
+}
+
+.JobsDetails__description{
+    width: 600px;
+    padding: 50px;
+    margin:auto;
+    text-align: left;
+}
+
+.JobsDetails__title{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 36px;    
+    font-weight: 800;
+}
+
+.JobsDetails__employment-type{
+    text-align: center;
+    padding:20px;
+}

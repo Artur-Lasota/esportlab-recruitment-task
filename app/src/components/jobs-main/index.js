@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import './JobsFetchData.css';
-import AUX from '../../hoc/Auxillary';
+import './styles.css';
 import { Link } from 'react-router-dom';
-import JobsDetails from '../JobsDetails/JobsDetails';
 
 class JobsFetchData extends Component {
     constructor() {
@@ -19,9 +17,9 @@ class JobsFetchData extends Component {
             }).then(data => {
                 let jobs = data.map((job) =>{
                     return(
-                        <Link to ={'/details/'+ job.id} key={job.id} className="job-box">
-                            <p className="job-box__title">{job.title}</p>
-                            <button className="job-box__button job-box__button--align-bottom">Apply now</button>
+                        <Link to ={'/details/'+ job.id} key={job.id} className="job-item">
+                            <p className="job-item__title">{job.title}</p>
+                            <button className="job-item__button job-item__button--align-bottom">Apply now</button>
                         </Link>
                     )
                 })
@@ -32,11 +30,9 @@ class JobsFetchData extends Component {
 
     render (){
         return (
-            <AUX>
-                <div className="jobs-box">
+                <div className="jobs-list">
                     {this.state.jobs}
                 </div>
-            </AUX>
         )
     }
 }

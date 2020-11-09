@@ -1,8 +1,8 @@
-.jobs-box{
+.jobs-list{
     width: 65%;
     margin: auto;
 }
-.job-box{
+.job-item{
     position: relative;
     width:300px;
     height: 200px;
@@ -14,12 +14,12 @@
     background-color: white;
 }
 
-    .job-box__title{
+    .job-item__title{
         font-size: 24px;    
         color:  rgb(23, 61, 184);
     }
 
-    .job-box__button{
+    .job-item__button{
         background-color:rgb(23, 61, 184);
         width: 150px;
         padding: 15px;
@@ -28,15 +28,8 @@
         border: none;
     }
 
-    .job-box__button--align-bottom{
+    .job-item__button--align-bottom{
         position: absolute;
         left:20px;
         bottom:30px;
     }
-
-h1{
-    text-align:center;
-    margin-top: 20px;
-    font-size: 36px;    
-    font-weight: 800;
-}

@@ -1,0 +1,19 @@
+{
+  "name": "esportlab-recruitment-task",
+  "version": "1.0.0",
+  "description": "React app which shows job offerts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artur-Lasota/esportlab-recruitment-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artur-Lasota/esportlab-recruitment-task/issues"
+  },
+  "homepage": "https://github.com/Artur-Lasota/esportlab-recruitment-task#readme"
+}

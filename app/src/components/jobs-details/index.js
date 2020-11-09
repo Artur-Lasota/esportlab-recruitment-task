@@ -21,11 +21,11 @@ class JobsDetails extends Component {
         }
 
     render (){
-        let job = <p></p>;
+        let job = <article></article>;
         if ( this.state.loadedJob ) {
             job = (
                 <article className="JobsDetails">
-                    <Link to="/">All positions</Link>
+                    <Link to="/"> <span className="material-icons icon--position">keyboard_backspace</span> <span className="return-link--position">All positions</span></Link>
                     <h2 className="JobsDetails__title">{this.state.loadedJob.title}</h2>
                     <p className="JobsDetails__employment-type">{this.state.loadedJob.employment_type}</p>
                     <p className="JobsDetails__description">{this.state.loadedJob.description}</p>

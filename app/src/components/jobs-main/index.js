@@ -24,7 +24,6 @@ class JobsFetchData extends Component {
                     )
                 })
                 this.setState({jobs: jobs});
-                console.log("state", this.state.jobs);
             })
     }
 

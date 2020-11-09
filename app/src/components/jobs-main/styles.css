@@ -1,7 +1,23 @@
-.jobs-list{
-    width: 65%;
-    margin: auto;
+
+@media (min-width: 1200px) {
+
+    .jobs-list{
+        width: 65%;
+        margin: auto;
+    }
+
+    .job-item{
+        margin:30px;
+    }
 }
+
+@media (min-width: 800px) and (max-width: 1199px){
+    .jobs-list{
+        width: 75%;
+        margin: auto;
+    }
+}
+
 .job-item{
     position: relative;
     width:300px;
@@ -10,7 +26,7 @@
     border: 1px rgba(0, 0, 0, 0.096) solid;
     border-radius: 10px;
     padding: 20px;
-    margin:30px;
+    margin:15px;
     background-color: white;
 }
 

@@ -1,11 +1,38 @@
-.JobsDetails{
-    width: 70%;
-    margin: auto;
+@media (min-width: 851px) {
+
+    .JobsDetails{
+        width: 70%;
+        margin: auto;
+        position: relative;
+    }
+
+    .JobsDetails__description{
+        width: 600px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 850px){
+    .JobsDetails__description{
+        width: 300px;
+    }
+}
+
+@media (min-width: 1200px){
+    .return-link--position{
+        position: absolute;
+        left:30px;
+        top:5px;
+    }
+}
+
+@media (max-width: 1199px){
+    .return-link--position{
+        visibility: hidden;
+    }
 }
 
 .JobsDetails__description{
-    width: 600px;
-    padding: 50px;
     margin:auto;
     text-align: left;
 }
@@ -21,3 +48,10 @@
     text-align: center;
     padding:20px;
 }
+
+.icon--position{
+    position: absolute;
+}
+
+
+

@@ -53,5 +53,11 @@
     position: absolute;
 }
 
+.Link{
+    text-decoration: none;
+    color: black;
+}
 
-
+.Link:hover, .Link:active{
+    color:  rgb(23, 61, 184);
+}

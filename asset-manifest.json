@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/esportlab-recruitment-task/static/css/main.675c7ad7.chunk.css",
+    "main.css": "/esportlab-recruitment-task/static/css/main.abf521b2.chunk.css",
     "main.js": "/esportlab-recruitment-task/static/js/main.c999cc45.chunk.js",
     "main.js.map": "/esportlab-recruitment-task/static/js/main.c999cc45.chunk.js.map",
     "runtime-main.js": "/esportlab-recruitment-task/static/js/runtime-main.170182ed.js",
@@ -8,13 +8,13 @@
     "static/js/2.ac0799b3.chunk.js": "/esportlab-recruitment-task/static/js/2.ac0799b3.chunk.js",
     "static/js/2.ac0799b3.chunk.js.map": "/esportlab-recruitment-task/static/js/2.ac0799b3.chunk.js.map",
     "index.html": "/esportlab-recruitment-task/index.html",
-    "static/css/main.675c7ad7.chunk.css.map": "/esportlab-recruitment-task/static/css/main.675c7ad7.chunk.css.map",
+    "static/css/main.abf521b2.chunk.css.map": "/esportlab-recruitment-task/static/css/main.abf521b2.chunk.css.map",
     "static/js/2.ac0799b3.chunk.js.LICENSE.txt": "/esportlab-recruitment-task/static/js/2.ac0799b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.170182ed.js",
     "static/js/2.ac0799b3.chunk.js",
-    "static/css/main.675c7ad7.chunk.css",
+    "static/css/main.abf521b2.chunk.css",
     "static/js/main.c999cc45.chunk.js"
   ]
 }

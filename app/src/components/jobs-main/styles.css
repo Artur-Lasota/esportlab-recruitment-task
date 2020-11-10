@@ -9,13 +9,21 @@
     .job-item{
         margin:30px;
     }
-
-    
-
     .job-item:hover{
         margin: 0px;
         padding: 30px;
         border: 1px rgb(23, 61, 184) solid;
+    }
+
+    .job-item:hover .job-item__button{
+        font-size: 14px;   
+        background-color:rgb(23, 61, 184);
+        width: 100px;
+        padding: 15px;
+        border-radius: 30px;
+        color:white;
+        border: none;
+        text-align: center;
     }
 }
 

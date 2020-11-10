@@ -1,11 +1,4 @@
 @media (min-width: 851px) {
-
-    .JobsDetails{
-        width: 70%;
-        margin: auto;
-        position: relative;
-    }
-
     .JobsDetails__description{
         width: 600px;
         padding: 50px;
@@ -18,7 +11,7 @@
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1280px){
     .return-link--position{
         position: absolute;
         left:30px;
@@ -30,6 +23,12 @@
     .return-link--position{
         visibility: hidden;
     }
+}
+
+.JobsDetails{
+    width: 70%;
+    margin: auto;
+    position: relative;
 }
 
 .JobsDetails__description{

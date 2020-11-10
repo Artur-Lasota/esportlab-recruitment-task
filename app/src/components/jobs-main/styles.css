@@ -9,6 +9,14 @@
     .job-item{
         margin:30px;
     }
+
+    
+
+    .job-item:hover{
+        margin: 0px;
+        padding: 30px;
+        border: 1px rgb(23, 61, 184) solid;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1199px){
@@ -29,6 +37,7 @@
     margin:15px;
     background-color: white;
     text-decoration: none;
+    transition: padding .3s;
 }
 
     .job-item__title{
@@ -37,6 +46,16 @@
     }
 
     .job-item__button{
+        font-size: 14px;   
+        width: 100px;
+        padding: 15px;
+        border-radius: 30px;
+        color:black;
+        border: 1px rgba(0, 0, 0, 0.096) solid;
+        text-align: center;
+    }
+
+    .job-item__button:hover{
         font-size: 14px;   
         background-color:rgb(23, 61, 184);
         width: 100px;

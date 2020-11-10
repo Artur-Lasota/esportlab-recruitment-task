@@ -25,7 +25,7 @@ class JobsDetails extends Component {
         if ( this.state.loadedJob ) {
             job = (
                 <article className="JobsDetails">
-                    <Link to="/" className="Link"> <span className="material-icons icon--position">keyboard_backspace</span> <span className="return-link--position">All positions</span></Link>
+                    <Link to="/esportlab-recruitment-task/" className="Link"> <span className="material-icons icon--position">keyboard_backspace</span> <span className="return-link--position">All positions</span></Link>
                     <h2 className="JobsDetails__title">{this.state.loadedJob.title}</h2>
                     <p className="JobsDetails__employment-type">{this.state.loadedJob.employment_type}</p>
                     <p className="JobsDetails__description">{this.state.loadedJob.description}</p>

@@ -19,7 +19,7 @@ class JobsFetchData extends Component {
                     return(
                         <Link to ={'/details/'+ job.id} key={job.id} className="job-item">
                             <p className="job-item__title">{job.title}</p>
-                            <button className="job-item__button job-item__button--align-bottom">Apply now</button>
+                            <p className="job-item__button job-item__button--align-bottom">Apply now</p>
                         </Link>
                     )
                 })

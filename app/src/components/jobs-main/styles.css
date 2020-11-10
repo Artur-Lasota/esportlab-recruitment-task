@@ -37,12 +37,14 @@
     }
 
     .job-item__button{
+        font-size: 14px;   
         background-color:rgb(23, 61, 184);
-        width: 150px;
+        width: 100px;
         padding: 15px;
         border-radius: 30px;
         color:white;
         border: none;
+        text-align: center;
     }
 
     .job-item__button--align-bottom{

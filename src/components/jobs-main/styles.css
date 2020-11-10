@@ -6,12 +6,8 @@
         margin: auto;
     }
 
-    .job-item{
-        margin:30px;
-    }
     .job-item:hover{
-        margin: 0px;
-        padding: 30px;
+        transform: scale(1.03);
         border: 1px rgb(23, 61, 184) solid;
     }
 
